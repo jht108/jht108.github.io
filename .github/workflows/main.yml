@@ -1,20 +1,11 @@
-
 name: Github Pages
-
-
 on:
   schedule:
-    - cron: '0 23 * * *'
+	- cron: '0 23 * * *'    
   workflow_dispatch:
-
-
 jobs:
-
   build:
-
 	runs-on: ubuntu-latest
-
-
 	steps:
 	  # 拉取代码
 	  - name: Checkout
